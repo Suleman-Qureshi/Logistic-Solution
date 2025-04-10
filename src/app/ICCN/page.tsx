@@ -29,11 +29,11 @@ function Page() {
                 <GoDotFill className="text-[#ED7D31] text-2xl p-[1px] bg-[#ed7c3192] rounded-full" />
               </div>
               <p className="text-lg">
-                At ICCN, we connect organizations and individuals with
-                professional consultants who specialize in humanitarian,
-                development, and peace-related fields." We are dedicated to
-                driving impactful change in humanitarian assistance, sustainable
-                development, and peacebuilding initiatives worldwide.
+                At ICCN&quot; we connect organizations and individuals with
+                professional consultants who specialize in humanitarian&quot;
+                development&quot; and peace-related fields&#34; We are dedicated to
+                driving impactful change in humanitarian assistance&quot; sustainable
+                development&quot; and peacebuilding initiatives worldwide&#34;
               </p>
             </div>
             <div className="flex gap-2 text-black items-start">

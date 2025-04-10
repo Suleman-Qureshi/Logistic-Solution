@@ -1,4 +1,3 @@
-import { Architects_Daughter } from 'next/font/google'
 import React from 'react'
 
 function ScopeofWorkSection() {

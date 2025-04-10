@@ -18,8 +18,6 @@ type Checked = DropdownMenuCheckboxItemProps["checked"]
 
 function Header() {
     const [showStatusBar, setShowStatusBar] = useState<Checked>(true)
-    const [showActivityBar, setShowActivityBar] =useState<Checked>(false)
-  const [showPanel, setShowPanel] = useState<Checked>(false)
   return (
     <nav className='fixed flex w-screen py-2 px-20 justify-between items-center shadow-sm bg-[#002060] text-white z-50'>
       <div className='w-full flex  items-center gap-8 font-light'>
