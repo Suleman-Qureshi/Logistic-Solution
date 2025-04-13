@@ -212,7 +212,7 @@ function Page() {
               className="w-full"
             />
           </div>
-          <span className="absolute bg-[#002060] w-2/3 text-white text-5xl font-bold items-center justify-center text-center flex gap-8 top-1/2 -translate-y-1/2 py-12 min-w-[500px] rounded-r-2xl">
+          <span className="absolute bg-[#002060] w-2/3 text-white text-5xl font-bold items-center justify-center text-center flex gap-8 top-44 py-12 min-w-[500px] rounded-r-2xl">
             <Image
               src="/HLP/icon6.svg"
               alt="HLPimage4"

@@ -19,13 +19,13 @@ type Checked = DropdownMenuCheckboxItemProps["checked"]
 function Header() {
     const [showStatusBar, setShowStatusBar] = useState<Checked>(true)
   return (
-    <nav className='fixed flex w-screen py-2 px-20 justify-between items-center shadow-sm bg-[#002060] text-white z-50'>
-      <div className='w-full flex  items-center gap-8 font-light'>
+    <nav className='fixed flex w-screen py-2 px-20 max-md:px-10 max-sm:px-2 gap-8 justify-between items-center shadow-sm bg-[#002060] text-white z-50'>
       <Link href='/' className=''>
       <Image src='/logo.svg' alt='logo' width={50} height={80} className='cursor-pointer' />
       </Link>
+      <div className='w-full flex  items-center gap-8 font-light max-lg:hidden'>
       <Link href='/' className=''>Home</Link>
-      <Link href='/' className=''>About Us</Link>
+      <Link href='/AboutUs' className=''>About Us</Link>
       <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" className='bg-transparent border-none hover:bg-transparent hover:text-white cursor-pointer font-light'>Our Services</Button>
@@ -37,19 +37,19 @@ function Header() {
           checked={showStatusBar}
           onCheckedChange={setShowStatusBar}
         >
-          <Link href='/' className='hover:text-[#002060]'>General order supplies/indenting</Link>
+          <Link href='/GeneralOrderSupply' className='hover:text-[#002060]'>General order supplies/indenting</Link>
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem
           checked={showStatusBar}
           onCheckedChange={setShowStatusBar}
         >
-          <Link href='/' className='hover:text-[#002060]'>Event Management</Link>
+          <Link href='/EventManagment' className='hover:text-[#002060]'>Event Management</Link>
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem
           checked={showStatusBar}
           onCheckedChange={setShowStatusBar}
         >
-          <Link href='/' className='hover:text-[#002060]'>Fleet Management</Link>
+          <Link href='/FleetManagement' className='hover:text-[#002060]'>Fleet Management</Link>
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem
           checked={showStatusBar}
@@ -61,7 +61,7 @@ function Header() {
           checked={showStatusBar}
           onCheckedChange={setShowStatusBar}
         >
-          <Link href='/' className='hover:text-[#002060]'>I Can Hear You
+          <Link href='/ICanHearYou' className='hover:text-[#002060]'>I Can Hear You
           </Link>
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem
@@ -101,7 +101,7 @@ function Header() {
           checked={showStatusBar}
           onCheckedChange={setShowStatusBar}
         >
-          <Link href='/' className='hover:text-[#002060]'>PAKMECH
+          <Link href='/PakMech' className='hover:text-[#002060]'>PAKMECH
 
           </Link>
         </DropdownMenuCheckboxItem>
@@ -114,7 +114,7 @@ function Header() {
         </DropdownMenuCheckboxItem>
       </DropdownMenuContent>
     </DropdownMenu>
-      <Link href='/' className=''>Gallery</Link>
+      <Link href='/Gallery' className=''>Gallery</Link>
       </div>
       <div className='w-full  flex justify-end items-center gap-4'>
         <Link href='/Contactus' className='bg-transparent border border-white rounded-md px-3 py-1 text-sm hover:bg-white hover:text-[#002060] duration-150 cursor-pointer'>Contact Us</Link>

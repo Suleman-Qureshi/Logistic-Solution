@@ -6,7 +6,7 @@ function GallerySection() {
     <section className='w-screen min-h-screen relative overflow-hidden flex flex-col gap-12 items-center pb-20'>
       <div className="flex flex-col items-center gap-6">
         <h1 className="w-screen bg-[#ED7D31] text-white text-7xl font-bold text-center py-2 relative left-0">
-          Gallery
+          Our Gallery
         </h1>
         <p className="text-lg text-gray-500 text-center w-2/3">
         Explore our gallery showcasing our fleet, warehouse operations, delivery network, and dedicated team—highlighting our commitment to efficient, reliable, and secure logistics solutions
