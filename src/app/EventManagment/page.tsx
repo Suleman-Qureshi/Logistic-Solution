@@ -10,7 +10,7 @@ function Page() {
       <Header/>
       <main className='w-screen overflow-hidden'>
         <section className='w-screen h-screen relative flex bg-[#002060]'>
-            <div className='w-full h-full text-white flex flex-col gap-8 pl-20 pr-10 pt-14'>
+            <div className='w-full h-full text-white flex flex-col gap-8 pl-20 max-lg:pl-10 max-md:pl-4 max-md:pr-4 pr-10 pt-14'>
                 <h1 className='text-5xl font-bold'>Your Trusted Partner for
                 Event Management Services</h1>
                 <p className='text-[#ED7D31] font-semibold text-xl'>At Logistics Solutions, We Specialize In Turning
@@ -27,12 +27,12 @@ event management services tailored to your needs. </p>
                     <div>
                         <Image src='/EM/icon2.svg' alt='' width={100} height={100} className='w-16' />
                     </div>
-                        <p>With just a call or WhatsApp message, we’ll handle every
+                        <p>With just a call or WhatsApp or E-mail message, we’ll handle every
 detail, ensuring your event is seamless, stress-free, and
 spectacular, at very reasonable rates</p>
                 </div>
             </div>
-            <div className='w-full h-full'>
+            <div className='w-full h-full max-lg:hidden'>
                 <Image src='/EM/image1.svg' alt='' width={1000} height={1000} className='w-full' />
             </div>
         </section>
@@ -46,18 +46,18 @@ spectacular, at very reasonable rates</p>
                       className="w-full"
                     />
                   </div>
-                  <span className="absolute bg-[#002060] w-2/3 text-white text-7xl font-bold items-center justify-center text-center flex gap-8 top-44 py-12 min-w-[500px] rounded-r-2xl">
+                  <span className="absolute bg-[#002060] w-2/3 max-md:w-4/5 max-sm:w-full text-white text-7xl max-lg:text-5xl max-sm:text-3xl font-bold items-center justify-center text-center flex gap-8 max-sm:gap-2 top-44 max-md:top-32 max-sm:top-24 py-12  rounded-r-2xl">
                     <Image
                       src="/EM/icon3.svg"
                       alt=""
                       width={80}
                       height={80}
-                      className=""
+                      className="max-lg:h-20 max-sm:h-10"
                     />
                     <p>Why Choose Us?</p>
                   </span>
-                  <div className="w-full pt-28 px-20 flex flex-col gap-8 ">
-                    <div className='flex w-full justify-between items-center gap-10'>
+                  <div className="w-full pt-28 max-sm:pt-10 px-20 max-lg:px-10 max-md:px-4 flex flex-col gap-8 ">
+                    <div className='flex max-md:flex-col w-full justify-between items-center gap-10'>
                     <div className='flex gap-2 w-full'>
                         <div>
                             <Image src='/EM/icon4.svg' alt='' width={100} height={100} className='w-10' />
@@ -80,14 +80,14 @@ specail deals.
                         </div>
                     </div>
                     </div>
-                    <div className='flex w-full justify-between items-center gap-10'>
+                    <div className='flex max-md:flex-col w-full justify-between items-center gap-10'>
                     <div className='flex gap-2 w-full'>
                         <div>
                             <Image src='/EM/icon6.svg' alt='' width={100} height={100} className='w-10' />
                         </div>
                         <div>
                             <h6 className='text-xl font-semibold'>Hassle-Free Booking </h6>
-                            <p>Just a call or WhatsApp message away</p>
+                            <p>Just a call or WhatsApp or E-mail message away</p>
                         </div>
                     </div>
                     <div className='flex gap-2 w-full'>
@@ -108,14 +108,14 @@ specail deals.
                     <div className='w-full h-full bg-black/50 text-white content-center text-center text-5xl font-bold'>Our Event Management Services Include
                     </div>
                     </div>
-                    <div className='mx-auto flex gap-4 flex-wrap'>
+                    <div className='mx-auto flex gap-4 flex-wrap max-md:flex-col'>
                         <div className='w-56 bg-[#002060] flex flex-col gap-6 p-2 text-white'>
                             <div className='w-full flex justify-center'>
                                 <div className='p-2 bg-white rounded-full w-12 h-12'>
                                     <Image src='/EM/icon8.svg' alt='' width={100} height={100} className='w-full' />  
                                 </div>
                             </div>
-                            <h5 className='text-xl font-semibold'>Corporation Events</h5>
+                            <h5 className='text-xl font-semibold'>Corporate Events</h5>
                             <div className='flex flex-col gap-2'>
                                 <div className='flex gap-1 '>
                                     <div><GoDotFill className="translate-y-1" /></div>
@@ -268,13 +268,13 @@ promotions</p>
                     </div>
                 </section>
                 <section className="w-screen relative pb-20 flex items-center">
-                          <div className="w-1/2 h-full flex flex-col gap-8 pl-20">
+                          <div className="w-1/2 max-md:w-full h-full flex flex-col gap-8 pl-20 max-lg:pl-10 max-md:pl-4">
                             <h2 className="text-6xl font-bold text-[#002060] mb-4">
                               How It Works
                             </h2>
                             <div className='flex flex-col gap-2'>
                                 <h3 className='text-4xl font-bold text-[#ED7D31]'>Contact Us</h3>
-                                <p className='text-xl'>Call or WhatsApp us with your supply requirements.</p>
+                                <p className='text-xl'>Call or WhatsApp or E-mail us for your requirements.</p>
                             </div>
                             <div className='flex flex-col gap-2'>
                                 <h3 className='text-4xl font-bold text-[#ED7D31]'>We Plan and Execute</h3>
@@ -282,7 +282,7 @@ promotions</p>
                                 concept to completion.</p>
                             </div>
                           </div>
-                          <div className="w-1/2 h-[547.3px] rounded-l-full flex flex-col justify-center pl-16  bg-[#002060]">
+                          <div className="w-1/2 h-[547.3px] rounded-l-full flex flex-col justify-center pl-16 max-md:hidden  bg-[#002060]">
                             <Image
                               src="/EM/image4.svg"
                               alt="How it works"
@@ -294,8 +294,8 @@ promotions</p>
                         </section>
                         <section className='w-screen h-screen flex flex-col justify-center items-center text-center gap-8 bg-[url("/EM/image5.svg")] bg-no-repeat bg-center bg-cover bg-fixed'>
                         <h2 className='text-7xl font-bold text-[#ED7D31]'>Our Promise</h2>
-                        <p className='text-2xl font-semibold text-white'>We’re committed to delivering memorable, stress-free, and flawlessly <br />
-executed events that exceed your expectations. Your satisfaction is our <br />
+                        <p className='text-2xl font-semibold text-white'>We’re committed to delivering memorable, stress-free, and flawlessly <br className='max-md:hidden' />
+executed events that exceed your expectations. Your satisfaction is our <br className='max-md:hidden' />
 ultimate goal!</p>
                         </section>
       </main>

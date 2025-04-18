@@ -13,7 +13,7 @@ function Page() {
           About Us
         </section>
         <section className="flex w-screen ">
-          <div className="p-20 pb-0 pr-4 flex flex-col gap-8 w-full">
+          <div className="p-20 max-md:p-4 pb-0 pr-4 flex flex-col gap-8 w-full">
             <h5 className="text-5xl font-bold text-[#002060]">Who We Are</h5>
             <div className="flex flex-col gap-2">
               <div className="flex gap-2">
@@ -52,13 +52,13 @@ we have the infrastructure and expertise to meet your needs.</p>
               </div>
             </div>
           </div>
-          <div className="w-full h-full">
+          <div className="w-full h-full max-lg:hidden">
             <Image src="/About/image2.svg" alt="aboutimg" width={1000} height={1000} className="w-full" /> 
           </div>
         </section>
         <section className="w-screen">
-            <div className="w-full px-20 flex gap-4">
-                <div className="border-t-[3rem] border-[#ED7D31] p-4 text-7xl font-bold w-80">Our Mission</div>
+            <div className="w-full px-20 max-lg:px-10 max-md:px-4 flex max-lg:flex-col gap-4 max-lg:mb-4">
+                <div className="border-t-[3rem] border-[#ED7D31] p-4 text-7xl font-bold w-80 max-sm:w-full">Our Mission</div>
                 <div className="flex flex-col gap-1">
                     <div>
                     <div className="w-14 h-14 p-2 bg-[#002060] rounded-full">
@@ -93,7 +93,7 @@ in every shipment</p>
             </div>
         </section>
         <section className="flex w-screen">
-            <div className="p-20 pr-10 w-3/5 flex flex-col gap-6 justify-center">
+            <div className="p-20 max-lg:p-10 max-md:px-4 pr-10 w-3/5 max-lg:w-full flex flex-col gap-6 justify-center">
                 <h5 className="text-6xl font-bold text-[#002060] w-full text-center pb-4">Our Vision</h5>
                 <div className="w-full flex flex-col gap-4">
                     <div className="w-full flex gap-2 px-4 py-2 bg-[#002060] text-white">
@@ -110,7 +110,7 @@ anticipate the demands of tomorrow.</p>
                     <div className="w-full flex gap-2 px-4 py-2">
                         <div>
                             <div className="w-16 h-16 bg-[#002060] rounded-full p-4 content-center">
-                                <Image src="/About/icon5.svg" alt="aboutimg" width={100} height={100} className="w-full" />
+                                <Image src="/About/icon4.svg" alt="aboutimg" width={100} height={100} className="w-full" />
                             </div>
                         </div>
                         <p className="text-lg">At Logistics Solutions we envision a world where
@@ -122,7 +122,7 @@ that enhance speed, accuracy, and reliability. </p>
                     <div className="w-full flex gap-2 px-4 py-2 bg-[#002060] text-white">
                         <div>
                             <div className="w-16 h-16 bg-[#ED7D31] rounded-full p-4 content-center">
-                                <Image src="/About/icon6.svg" alt="aboutimg" width={100} height={100} className="w-full" />
+                                <Image src="/About/icon5.svg" alt="aboutimg" width={100} height={100} className="w-full" />
                             </div>
                         </div>
                         <p className="text-lg">With a future-focused mindset, we aim to
@@ -132,13 +132,13 @@ needs of global trade. </p>
                     </div>
                 </div>
             </div>
-            <div className="w-2/5 overflow-hidden">
+            <div className="w-2/5 overflow-hidden max-lg:hidden">
             <Image src="/About/image4.svg" alt="aboutimg" width={10000} height={10000} className="w-full" />
             </div>
         </section>
-        <section className="w-screen gap-10 flex px-20">
-            <div className="w-3/5 h-full flex flex-col gap-8 pt-20">
-            <h5 className="text-6xl font-bold text-[#002060] w-full text-center pb-4">Core Value</h5>
+        <section className="w-screen gap-10 flex max-lg:flex-col px-20 max-lg:px-10 max-md:px-4">
+            <div className="w-3/5 max-lg:w-full h-full flex flex-col gap-8 pt-20">
+            <h5 className="text-6xl font-bold text-[#002060] w-full text-center pb-4">Core Values</h5>
              <div className="flex flex-col gap-4">
                 <div className="flex gap-2">
                 <div>
@@ -173,7 +173,7 @@ and accountability in every shipment, service, and interaction.
               </div>
              </div>
             </div>
-            <div className="w-2/5 h-full">
+            <div className="w-2/5 max-lg:w-full flex flex-col items-center h-full">
             <Image src="/About/image5.svg" alt="aboutimg" width={10000} height={10000} className="w-full" />
             </div>
         </section>

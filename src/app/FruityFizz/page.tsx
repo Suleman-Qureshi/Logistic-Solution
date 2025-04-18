@@ -9,19 +9,24 @@ function Page() {
      <Header/> 
      <main className='w-screen overflow-hidden'>
         {/* Hero Section */}
-        <section className='bg-[#002060] w-screen h-screen overflow-hidden relative'>
+        <section className='bg-[#002060] w-screen h-screen overflow-hidden relative max-md:bg-[url("https://img.freepik.com/free-photo/close-up-apples-being-processed_23-2150713380.jpg?ga=GA1.1.56082603.1736629362&semt=ais_hybrid&w=740")] bg-no-repeat bg-center bg-cover max-md:flex max-md:justify-center max-md:items-center bg-fixed'>
           <div>
             <Image
               src="/JM/image1.svg"
               alt="Juice Image"
-              className="h-auto w-full -translate-y-24"
+              className="h-auto w-full -translate-y-24 max-md:hidden"
               width={10000000}
               height={1000000}
               
               />
           </div>
-          <div className='absolute right-20 bottom-20'>
+          <div className='absolute right-20 bottom-20 max-md:hidden'>
           <h1 className="text-white font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl z-10">
+              Juice Manufacturing
+            </h1>
+          </div>
+          <div className='hidden max-md:flex w-screen h-screen bg-black/50  justify-center items-center text-center'>
+          <h1 className="text-white font-bold text-[13vw] z-10">
               Juice Manufacturing
             </h1>
           </div>
@@ -30,7 +35,7 @@ function Page() {
         <section className="min-h-screen grid grid-cols-1 md:grid-cols-2">
           <div className="p-6 md:p-20">
             <h1 className="text-[#002060] text-3xl md:text-5xl font-bold">
-              Fresh, Hygienic, and Delicious Juices from Logistic Solutions
+              Fresh, Hygienic, and Delicious Juices
             </h1>
             <ul className="space-y-4 mt-4">
               <li>
@@ -46,7 +51,7 @@ function Page() {
                 hygienic technology to ensure the highest standards of health
                 and safety. Whether you’re a retailer, distributor, or
                 individual customer, we’ve got your juice needs covered. Just a
-                call or WhatsApp message away, we’re ready to deliver freshness
+                call or WhatsApp or E-mail message away, we’re ready to deliver freshness
                 to your doorstep!
               </li>
             </ul>
@@ -75,14 +80,14 @@ function Page() {
                 Ordering
               </li>
               <li>
-                • Freshness Guaranteed: Made from the finest, locally sourced
+                • Freshness Guaranteed: Made from the fresh finest, locally sourced
                 fruits. <br />
                 • Hygienic Production: Manufactured using the latest technology
                 to maintain high health and safety standards. <br />
                 • Nutrient-Rich: Preserves the natural vitamins and flavors of
                 fruits. <br />
                 • Eco-Friendly Packaging: Environmentally conscious bottling
-                solutions. <br />• Easy Ordering: Just call or WhatsApp to place
+                solutions. <br />• Easy Ordering: Just call or WhatsApp or E-mail to place
                 your order!
               </li>
             </ul>
@@ -109,7 +114,7 @@ function Page() {
               <li className="flex flex-col sm:flex-row gap-4 w-full">
                 <div className="bg-[#E66826] rounded-3xl w-20 h-20 p-4 flex justify-center items-center mx-auto sm:mx-0">
                   <Image
-                    src="'/JM/icon1.svg"
+                    src="/JM/icon1.svg"
                     width={50}
                     height={50}
                     alt="Sourcing Icon"
@@ -240,8 +245,8 @@ function Page() {
               />
               <ul className="text-white text-lg list-disc pl-5 space-y-2">
                 <li>
-                  <span className="font-bold">Contact Us:</span> Call or
-                  WhatsApp.
+                  <span className="font-bold">Contact Us:</span> Call,
+                  WhatsApp or E-mail.
                 </li>
                 <li>Place Your Order.</li>
                 <li>Delivery to your doorstep.</li>

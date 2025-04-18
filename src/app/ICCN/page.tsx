@@ -9,17 +9,19 @@ function Page() {
     <>
       <Header />
       <main className="w-screen min-h-screen overflow-hidden">
-        <section className="w-screen h-screen py-14 pl-0 flex items-center">
+        <section className="w-screen h-screen py-14 pl-0 flex items-center max-md:bg-[url('/ICCN/iccnmobilebg.svg')] max-md:bg-no-repeat max-md:bg-cover max-md:bg-center max-md:bg-fixed">
+        <span className="w-screen px-4 hidden max-md:block text-center text-4xl font-bold text-white py-8 bg-[#002060]">ICCN-Imapct Connect Consultants Network</span>
           <Image
             src="/ICCN/image1.svg"
             alt="ICCN Image"
             width={1000000}
             height={1000000}
-            className=" h-full w-auto pr-20"
+            className=" h-full w-auto max-lg:w-full max-lg:h-auto pr-20 max-md:pr-10 max-sm:pr-4 max-md:hidden"
           />
+
         </section>
-        <section className="w-screen min-h-screen flex gap-12 items-center">
-          <div className="w-full flex flex-col gap-8 py-20 pl-20 ">
+        <section className="w-screen min-h-screen flex max-md:flex-col max-md:gap-6 gap-12 items-center">
+          <div className="w-full flex flex-col gap-8 py-20 pl-20 max-lg:py-10 max-lg:pl-10 max-md:py-4 max-md:pl-4 max-md:pr-4 ">
             <h2 className="text-3xl font-bold text-[#002060]">
               Introducing ICCN Your Gateway to Expert Humanitarian, Development,
               and Peace Consultancy
@@ -31,9 +33,9 @@ function Page() {
               <p className="text-lg">
                 At ICCN&quot; we connect organizations and individuals with
                 professional consultants who specialize in humanitarian&quot;
-                development&quot; and peace-related fields&#34; We are dedicated to
+                development&quot; and peace building related fields&#34; We are dedicated to
                 driving impactful change in humanitarian assistance&quot; sustainable
-                development&quot; and peacebuilding initiatives worldwide&#34;
+                development&quot; and peace building initiatives worldwide&#34;
               </p>
             </div>
             <div className="flex gap-2 text-black items-start">
@@ -42,10 +44,10 @@ function Page() {
               </div>
               <p className="text-lg">
                 With a team of experienced professionals, we provide expert
-                consultancy services that empower organizations, governments,
+                consultants services that empower organizations, governments,
                 and communities to navigate complex challenges and create
                 lasting solutions. Our consultancy services help shape inclusive
-                and sustainable development programs{" "}
+                and sustainable development programmes
               </p>
             </div>
           </div>
@@ -59,8 +61,8 @@ function Page() {
             />
           </div>
         </section>
-        <section className="flex p-20 items-center w-screen min-h-screen overflow-hidden">
-          <div className="p-6 w-3/5 flex flex-col gap-8 bg-[#002060] rounded-lg z-10 text-white">
+        <section className="flex p-20 max-lg:p-10 max-md:p-4 items-center w-screen min-h-screen overflow-hidden">
+          <div className="p-6 w-3/5 max-md:w-4/5 max-sm:w-full flex flex-col gap-8 bg-[#002060] rounded-lg z-10 text-white">
             <h3 className="text-5xl font-bold">Who We Are</h3>
             <div className="flex gap-4 items-start">
               <Image
@@ -93,7 +95,7 @@ function Page() {
               </p>
             </div>
           </div>
-          <div className="w-3/4 h-full overflow-hidden absolute right-0">
+          <div className="w-3/4 h-full overflow-hidden absolute right-0 max-sm:hidden">
             <Image
               src="/ICCN/image3.svg"
               alt="ICCNIMAGE3"
@@ -113,7 +115,7 @@ function Page() {
               className="w-full"
             />
           </div>
-          <span className="absolute bg-[#002060] w-2/3 text-white text-8xl font-bold items-center justify-center text-center flex gap-8 top-44 py-12 min-w-[500px] rounded-r-2xl">
+          <span className="absolute bg-[#002060] w-2/3 max-lg:w-3/4 max-md:top-32 max-sm:top-24 max-sm:w-full max-sm:mr-4 text-white text-8xl max-lg:text-7xl max-md:text-5xl font-bold items-center justify-center text-center flex gap-8 top-44 py-12 min-w-[500px] rounded-r-2xl">
             <Image
               src="/ICCN/icon3.svg"
               alt="ICCNimage4"
@@ -121,9 +123,9 @@ function Page() {
               height={80}
               className=""
             />
-            <p>Our Servies</p>
+            <p>Our Services</p>
           </span>
-          <div className="w-full pt-28 px-20 flex gap-8 ">
+          <div className="w-full pt-28 px-20 max-lg:px-10 max-md:px-4 max-md:pt-14 max-sm:pt-10 flex max-md:flex-col gap-8 ">
             <div className="flex gap-2 text-black items-start w-full">
               <div>
                 <GoDotFill className="text-[#ED7D31] text-2xl p-[1px] bg-[#ed7c3192] rounded-full" />
@@ -148,8 +150,8 @@ function Page() {
           </div>
         </section>
         <section className="w-screen min-h-screen flex gap-8">
-          <div className="w-2/3 flex flex-col gap-12 p-20">
-            <h2 className="text-slate-900 text-5xl font-bold">How Its Works</h2>
+          <div className="w-2/3 max-md:w-full flex flex-col gap-12 p-20 max-lg:p-10 max-md:p-4">
+            <h2 className="text-slate-900 text-5xl font-bold">How It Works</h2>
             <div className="flex gap-4">
               <GoDotFill className="text-[#ED7D31] text-2xl p-[1px] bg-[#ed7c3192] rounded-full translate-y-2" />
               <div className="flex flex-col gap-2">
@@ -178,7 +180,7 @@ function Page() {
               </div>
             </div>
           </div>
-          <div className="w-1/3 h-screen bg-[#002060] p-[1px] content-center relative">
+          <div className="w-1/3 h-screen bg-[#002060] p-[1px] content-center relative max-md:hidden">
             <span className="w-20 h-16 bg-[#ED7D31] absolute top-1/2 -translate-y-1/2 rounded-md -left-6"></span>
             <Image
               src="/ICCN/image5.svg"
@@ -190,7 +192,7 @@ function Page() {
           </div>
         </section>
         <section className="w-screen min-h-screen flex">
-          <div className="w-5/12 h-screen">
+          <div className="w-5/12 h-screen max-md:hidden">
             <Image
               src="/ICCN/image6.svg"
               alt="ICCNimage6"
@@ -199,7 +201,7 @@ function Page() {
               className="w-full"
             />
           </div>
-          <div className="w-7/12 bg-[#002060] text-white p-20 flex flex-col gap-12">
+          <div className="w-7/12 max-md:w-full bg-[#002060] text-white p-20 max-lg:p-10 max-md:p-4 flex flex-col gap-12">
             <h2 className="text-5xl font-bold">Why Choose ICCN?</h2>
             <div className="flex flex-col gap-8">
               <div className="flex gap-4 items-center">

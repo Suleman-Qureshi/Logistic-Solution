@@ -9,8 +9,8 @@ function Page() {
     <>
       <Header />
       <main className="w-screen overflow-hidden">
-        <section className="w-screen h-screen bg-[#002060] flex items-center text-white">
-          <div className="w-3/5 h-full flex flex-col gap-6 justify-center pl-20 pb-10 pr-10 pt-9">
+        <section className="w-screen min-h-screen bg-[#002060] flex items-center text-white">
+          <div className="w-3/5 max-lg:w-full h-full flex flex-col gap-6 max-xl:gap-4 justify-center pl-20 max-lg:pl-10 pb-10 pr-10 pt-10">
             <h1 className="text-5xl font-bold">
               Your One Stop Solution for Vehicle Rentals and Fleet Management
               Services
@@ -49,11 +49,11 @@ function Page() {
                 With options for daily, monthly, yearly, or long-term rentals,
                 and a wide range of fleet management services, we make mobility
                 simple and convenient—all accessible with just a call or
-                WhatsApp message.
+                WhatsApp or E-mail message.
               </p>
             </div>
           </div>
-          <div className="w-2/5 h-full content-center">
+          <div className="w-2/5 h-full content-center max-lg:hidden">
             <Image
               src="/FM/image1.svg"
               alt="FleetManagement"
@@ -64,11 +64,11 @@ function Page() {
           </div>
         </section>
         <section className="flex items-center w-screen py-20">
-          <div className="w-full h-full flex flex-col gap-6 pl-20">
+          <div className="w-full h-full flex flex-col gap-6 pl-20 max-lg:pl-10 max-md:pl-4">
             <h2 className="text-5xl font-bold text-[#002060]">
               Why Choose Us?
             </h2>
-            <div className="flex gap-4">
+            <div className="flex gap-4 max-lg:flex-col">
               <div className="flex flex-col gap-2">
                 <div>
                   <Image
@@ -106,7 +106,7 @@ function Page() {
                 </p>
               </div>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 max-lg:flex-col">
               <div className="flex flex-col gap-2">
                 <div>
                   <Image
@@ -145,7 +145,7 @@ function Page() {
               </div>
             </div>
           </div>
-          <div className="w-full h-full content-center px-20">
+          <div className="w-full max-md:hidden h-full content-center px-20 max-lg:px-10">
             <Image
               src="/FM/image2.svg"
               alt="FleetManagement"
@@ -155,12 +155,12 @@ function Page() {
             />
           </div>
         </section>
-        <section className="w-screen px-20 py-8 flex flex-col gap-2">
+        <section className="w-screen px-20 max-lg:px-10 max-md:px-4 py-8 flex flex-col gap-2">
           <h2 className="text-5xl font-bold text-[#002060]">
             Our Vehicle Rental Services Include
           </h2>
-          <div className="flex w-full items-center gap-10">
-            <div className="w-2/5 h-full flex flex-col gap-8 justify-center">
+          <div className="flex max-sm:flex-col w-full items-center gap-10">
+            <div className="w-2/5 max-sm:w-full h-full flex flex-col gap-8 justify-center">
               <div className="flex flex-col gap-4">
                 <h5 className="text-2xl font-semibold text-[#ED7D31]">
                   For Personal Use
@@ -218,7 +218,7 @@ function Page() {
                 </div>
               </div>
             </div>
-            <div className="w-3/5 h-full flex flex-col gap-4">
+            <div className="w-3/5 max-sm:w-full h-full flex flex-col gap-4">
             <div className="w-full flex flex-col gap-2">
                 <div className="w-full p-4 bg-[#ED7D31] text-white text-3xl font-semibold rounded-bl-3xl rounded-tr-3xl">For Other Purposes</div>
             <div className="w-full p-6 border border-[#ED7D31] rounded-b-lg flex flex-col gap-2">
@@ -284,11 +284,11 @@ function Page() {
           </div>
         </section>
         <section className="w-screen relative flex flex-col gap-8 justify-center pt-20 overflow-hidden">
-            <span className="w-1/2 pl-10 pr-20 content-center absolute right-0">
+            <span className="w-1/2 pl-10 pr-20 max-lg:pr-10 max-sm:hidden max-md:pr-4 content-center absolute right-0">
             <Image src='/FM/image3.svg' alt='FleetManagement' width={1000} height={1000} className='w-full' />
             </span>
-            <div className="w-full  px-20">
-            <div className="w-1/2 flex flex-col gap-8 justify-center">
+            <div className="w-full max-lg:px-10 max-md:px-4  px-20">
+            <div className="w-1/2 max-sm:w-full flex flex-col gap-8 justify-center">
                 <h2 className="text-5xl font-bold text-[#002060]">How It Works</h2>
                 <div className="flex gap-4">
                     <div>
@@ -304,13 +304,13 @@ function Page() {
                     </div>
                     <div className="flex flex-col gap-1">
                         <h6 className="text-2xl font-semibold">Contact Us</h6>
-                        <p className="text-lg">Call or WhtasApp is with your rental or service request.</p>
+                        <p className="text-lg">Call or WhtasApp or E-mail for your rental or service request.</p>
                     </div>
                 </div>
             </div>
             </div>
-            <div className="w-full bg-[#002060] pb-20 px-20 text-white">
-            <div className="w-1/2 flex flex-col gap-8">
+            <div className="w-full bg-[#002060] pb-20 max-lg:pb-10 px-20 max-lg:px-10 max-md:px-4  text-white">
+            <div className="w-1/2 max-sm:w-full flex flex-col gap-8">
                 <div className="flex gap-4">
                     <div>
                       <div className="w-12 h-12 rounded-lg p-2 bg-[#ED7D31] translate-y-1 content-center">
@@ -351,10 +351,10 @@ function Page() {
             </div>
             </div>
         </section>
-        <section className='w-screen h-screen flex flex-col justify-center items-center text-center gap-8 bg-[url("/FM/image4.svg")] bg-no-repeat bg-center bg-cover bg-fixed'>
+        <section className='w-screen h-screen flex flex-col px-4 justify-center items-center text-center gap-8 bg-[url("/FM/image4.svg")] bg-no-repeat bg-center bg-cover bg-fixed'>
                         <h2 className='text-7xl font-bold text-[#ED7D31]'>Our Promise</h2>
-                        <p className='text-2xl font-semibold text-white'>We’re committed to providing reliable, efficient, and high-quality <br />
-vehicle rental and fleet management services tailored to your needs. <br />
+                        <p className='text-2xl font-semibold text-white'>We’re committed to providing reliable, efficient, and high-quality <br className="max-md:hidden" />
+vehicle rental and fleet management services tailored to your needs. <br className="max-md:hidden" />
 Your satisfaction is our priority!</p>
                         </section>
       </main>

@@ -9,11 +9,11 @@ function GallerySection() {
           Our Gallery
         </h1>
         <p className="text-lg text-gray-500 text-center w-2/3">
-        Explore our gallery showcasing our fleet, warehouse operations, delivery network, and dedicated team—highlighting our commitment to efficient, reliable, and secure logistics solutions
+        Explore our gallery showcasing our work
         </p>
       </div>
 <div className='px-auto flex flex-col gap-4 justify-center items-center'>
-    <div className='flex gap-4'>
+    <div className='flex gap-4 max-md:flex-col'>
         <div className='flex flex-col gap-4'>
             <div className='w-72 h-52 bg-[#002060] overflow-hidden'>
                 <Image src='/IMG-20250407-WA0007.jpg' alt='' width={1000} height={1000} className='w-full h-full' />
@@ -47,9 +47,6 @@ function GallerySection() {
                 <Image src='/IMG-20250407-WA0023.jpg' alt='' width={1000} height={1000} className='w-full h-full' />
             </div>
         </div>
-    </div>
-    <div className='w-full h-24 bg-[#002060]'>
-        <Image src={'/IMG-20250407-WA0018.jpg'} alt='' width={1000} height={1000} className='w-full' />
     </div>
 </div>
     </section>

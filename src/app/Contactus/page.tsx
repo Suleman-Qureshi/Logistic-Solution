@@ -8,8 +8,8 @@ function Page() {
   return (
     <>
      <Header/>
-     <section className='w-screen min-h-screen p-20 flex gap-8'>
-        <div className='w-2/5 h-full bg-[#002060] text-white relative flex flex-col gap-8 p-8 rounded-sm overflow-hidden'>
+     <section className='w-screen min-h-screen pt-10 max-lg:pt-10 max-md:pt-10 p-20 max-lg:p-10 max-md:p-4 flex max-lg:flex-col gap-8'>
+        <div className='w-2/5 max-lg:w-4/5 max-sm:w-full h-full bg-[#002060] text-white relative flex flex-col gap-8 p-8 rounded-sm overflow-hidden'>
         <span className='w-10 h-10 bg-[#ed7c3186] rounded-full absolute bottom-20 right-8'></span>
         <span className='w-40 h-40 bg-[#ed7c3186] rounded-full absolute -bottom-16 -right-16'></span>
             <div className='flex flex-col gap-2'>
@@ -19,15 +19,15 @@ function Page() {
             <div className='flex flex-col gap-4'>
                 <div className='flex gap-2 items-center'>
                 <FaPhoneAlt className='text-2xl' />
-                <p className='text-lg'>+0123 45676 89</p>
+                <p className='text-lg'>+92 (0) 51 873 64 81</p>
                 </div>
                 <div className='flex gap-2 items-center'>
                 <IoMdMail  className='text-2xl' />
-                <p className='text-lg'>example@xyz.com</p>
+                <p className='text-lg'>info@logsols.com</p>
                 </div>
-                <div className='flex gap-2 items-center'>
-                <FaMapLocationDot className='text-2xl' />
-                <p className='text-lg'>City ABC Street No 2 lorem</p>
+                <div className='flex gap-2'>
+                <FaMapLocationDot className='text-6xl' />
+                <p className='text-lg'>34, East Bani Gala Hills Road, Off Jinnah Road, Bani Gala 46500, Islamabad, Pakistan</p>
                 </div>
             </div>
                 <div className='flex gap-4 items-center'>
@@ -37,7 +37,7 @@ function Page() {
                     <div className='flex justify-center items-center p-2 bg-white rounded-full cursor-pointer hover:bg-[#ED7D31] hover:text-white text-[#002060] duration-150'><FaInstagram className='text-2xl' /></div>
                 </div>
         </div>
-        <form className='flex flex-wrap gap-8 w-3/5 '>
+        <form className='flex flex-wrap gap-8 w-3/5 max-sm:w-full'>
             <div className='flex flex-col gap-2 w-60 group'>
               <label htmlFor="firstname" className='text-[#002060]'>First Name</label>
               <input type="text" name='firstname' className='border-b-2 border-[#002060] outline-none focus:border-[#ED7D31]' />

@@ -9,8 +9,8 @@ function Page() {
     <>
       <Header />
       <main className="w-screen overflow-x-hidden">
-        <section className="w-screen h-screen pt-14 pb-10 px-20 flex justify-center items-center">
-          <div className="h-full w-5/12 overflow-hidden">
+        <section className="w-screen min-h-screen pt-14 pb-10 px-20 max-lg:px-10 max-md:px-4 flex max-md:flex-row-reverse justify-center items-center max-sm:bg-[url('/HLP/image1.svg')] bg-no-repeat bg-center bg-cover bg-fixed">
+          <div className="h-full w-5/12 overflow-hidden max-sm:w-full max-sm:hidden">
             <Image
               src="/HLP/image1.svg"
               alt="HLP_image1"
@@ -19,12 +19,12 @@ function Page() {
               className="w-full"
             />
           </div>
-          <div className="w-7/12 bg-[#002060] py-16 rounded-tl-3xl rounded-br-3xl flex justify-center items-center text-center text-white text-5xl font-bold">
-            HLP Services - Housing, Land, and Property Rights
+          <div className="w-7/12 bg-[#002060] py-16 max-md:py-8 rounded-tl-3xl rounded-br-3xl flex justify-center items-center text-center text-white text-5xl max-md:text-4xl font-bold max-sm:w-full">
+          Housing, Land, and Property Rights (HLP) Services
           </div>
         </section>
         <section className="w-screen min-h-screen flex">
-          <div className="h-screen overflow-hidden w-full">
+          <div className="h-screen overflow-hidden w-full max-md:hidden">
             <Image
               src="/HLP/image2.svg"
               alt="HLP_image2"
@@ -33,7 +33,7 @@ function Page() {
               className="h-full w-auto"
             />
           </div>
-          <div className="w-full flex flex-col gap-8 py-10 pr-20">
+          <div className="w-full flex flex-col gap-8 py-10 pr-20 max-lg:pr-10 max-md:pr-4 max-md:py-4">
             <h2 className="text-3xl font-bold text-[#002060]">
               Introducing HLP Services – Your Trusted Partner in Housing, Land,
               and Property Rights Management
@@ -92,8 +92,8 @@ function Page() {
             </div>
           </div>
         </section>
-        <section className="flex p-20 items-center w-screen min-h-screen overflow-hidden">
-          <div className="p-6 w-3/5 flex flex-col gap-8 bg-[#002060] rounded-lg z-10 text-white">
+        <section className="flex p-20 max-lg:p-10 max-md:p-4 items-center w-screen min-h-screen overflow-hidden">
+          <div className="p-6 w-3/5 max-md:w-4/5 max-sm:w-full flex flex-col gap-8 bg-[#002060] rounded-lg z-10 text-white">
             <h3 className="text-5xl font-bold">Our Mission</h3>
             <div className="flex gap-4 items-start">
               <Image
@@ -125,7 +125,7 @@ function Page() {
               </p>
             </div>
           </div>
-          <div className="w-3/4 h-full overflow-hidden absolute right-0">
+          <div className="w-3/4 h-full overflow-hidden absolute right-0  max-sm:hidden">
             <Image
               src="/HLP/image3.svg"
               alt="HLPIMAGE3"
@@ -135,8 +135,8 @@ function Page() {
             />
           </div>
         </section>
-        <section className="w-screen min-h-screen p-20 flex justify-center items-center">
-          <div className="w-1/3 ">
+        <section className="w-screen min-h-screen p-20 max-lg:p-10 max-md:p-4 flex justify-center items-center">
+          <div className="w-1/3  max-md:hidden">
             <Image
               src="/HLP/image4.svg"
               alt="HLPIMAGE4"
@@ -145,14 +145,14 @@ function Page() {
               className="h-full"
             />
           </div>
-          <div className="w-2/3 h-full flex flex-col justify-center gap-8 bg-[#002060] p-8 -translate-x-8 text-white">
+          <div className="w-2/3 max-md:w-full h-full flex flex-col justify-center gap-8 bg-[#002060] p-8 -translate-x-8 max-md:-translate-x-0 text-white">
             <h2 className="text-3xl font-bold">Our Services</h2>
             <div className="flex flex-col gap-1">
               <div className="flex gap-2  items-center">
                 <div>
                   <GoDotFill className="text-[#ED7D31]  p-[1px] bg-[#ed7c3192] rounded-full" />
                 </div>
-                <p className="text-lg">Property Sales and Leasing</p>
+                <p className="text-lg">Protection of HLP rights of Vulnerable groups</p>
               </div>
               <div className="flex gap-2  items-center">
                 <div>
@@ -180,7 +180,7 @@ function Page() {
                 <b className="text-[#ED7D31]">Technical Advice:</b>{" "}
                 <p>
                   {" "}
-                  Expert guidance on land measurements, ampping, and topographic
+                  Expert guidance on land measurements, mapping, and topographic
                   surveys.
                 </p>
               </div>
@@ -212,17 +212,17 @@ function Page() {
               className="w-full"
             />
           </div>
-          <span className="absolute bg-[#002060] w-2/3 text-white text-5xl font-bold items-center justify-center text-center flex gap-8 top-44 py-12 min-w-[500px] rounded-r-2xl">
+          <span className="absolute bg-[#002060] w-2/3 max-lg:w-3/4 max-sm:w-full max-md:gap-2 max-md:text-3xl text-white text-5xl font-bold items-center justify-center text-center flex gap-8 top-44 py-12 rounded-r-2xl max-sm:top-14">
             <Image
               src="/HLP/icon6.svg"
               alt="HLPimage4"
               width={80}
               height={80}
-              className=""
+              className=" max-md:w-20"
             />
             <p>What We Do Not Do</p>
           </span>
-          <div className="w-full pt-28 px-20 flex gap-8 ">
+          <div className="w-full pt-28 max-sm:pt-10 max-lg:px-10 max-md:px-4 px-20 flex max-sm:flex-col gap-8 ">
             <div className="flex gap-2 text-black items-start w-full">
               <div>
                 <GoDotFill className="text-[#ED7D31] text-2xl p-[1px] bg-[#ed7c3192] rounded-full" />
@@ -243,7 +243,7 @@ function Page() {
                     <strong className="text-[#ED7D31]">
                       We are not a property or estate agency.
                     </strong>{" "}
-                    We do not buys, sell, or lease properties
+                    We do not buy, sell, or lease properties
                   </p>
                 </div>
                 <div className="flex gap-2">
@@ -252,7 +252,7 @@ function Page() {
                   </div>
                   <p>
                     <strong className="text-[#ED7D31]">
-                      We are not act as legal representatives.
+                      We do not act as legal representatives.
                     </strong>{" "}
                     Instead, we connect clients with qualified legal
                     professionals.{" "}
@@ -262,8 +262,8 @@ function Page() {
             </div>
           </div>
         </section>
-        <section className="w-screen relative pb-20 flex">
-          <div className="w-1/2 h-full flex flex-col gap-8 pl-20">
+        <section className="w-screen relative pb-20 max-lg:pb-10 flex">
+          <div className="w-1/2 max-md:w-full h-full flex flex-col gap-8 pl-20 max-lg:pl-20 max-md:pl-4">
             <h2 className="text-6xl font-bold text-[#002060]">
               Why Choose HLP Services?
             </h2>
@@ -273,7 +273,7 @@ function Page() {
                   <GoDotFill className="text-[#ED7D31] text-xl p-[1px] bg-[#ed7c3192] rounded-full" />
                 </div>
                 <p className="text-lg">
-                  Experienced professionals in the real estate sector.
+                  Experienced professionals.
                 </p>
               </div>
               <div className="flex gap-2 items-center">
@@ -294,29 +294,25 @@ function Page() {
               </div>
             </div>
             <div className="flex flex-col gap-4 text-lg leading-none">
-              <div>
-                <strong className="text-[#ED7D31]">Client-Centric Approach:</strong>
-                <p>Tailored solutions to 
-                meet your specific needs.</p>
+              <div className="flex gap-2 items-center">
+              <GoDotFill className="text-lg rounded-full" />
+                <strong className="text-[#ED7D31]"> Client-Centric Approach</strong>
               </div>
-              <div>
-                <strong className="text-[#ED7D31]">Expertise:</strong>
-                <p>Tailored solutions to
-                meet your specific needs</p>
+              <div className="flex gap-2 items-center">
+              <GoDotFill className="text-lg rounded-full" />
+                <strong className="text-[#ED7D31]">Expertise</strong>
               </div>
-              <div>
-                <strong className="text-[#ED7D31]">Transparency:</strong>
-                <p>Clear and honest advice to help
-                you make informed decisions.</p>
+              <div className="flex gap-2 items-center">
+              <GoDotFill className="text-lg rounded-full" />
+                <strong className="text-[#ED7D31]">Transparency</strong>
               </div>
-              <div>
-                <strong className="text-[#ED7D31]">Efficiency:</strong>
-                <p>Streamlined processes to save you
-                time and effort.</p>
+              <div className="flex gap-2 items-center">
+              <GoDotFill className="text-lg rounded-full" />
+                <strong className="text-[#ED7D31]">Efficiency</strong>
               </div>
             </div>
           </div>
-          <div className="w-1/2 h-[547.3px] rounded-l-full flex flex-col justify-center pl-16  bg-[#002060]">
+          <div className="w-1/2 h-[547.3px] rounded-l-full flex flex-col justify-center pl-16  bg-[#002060] max-md:hidden">
             <Image
               src="/HLP/image5.svg"
               alt="How it works"

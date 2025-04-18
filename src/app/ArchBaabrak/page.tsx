@@ -11,15 +11,15 @@ function Page() {
       <main className="w-screen min-h-screen overflow-hidden">
         <section className="relative w-screen h-screen bg-[#002060] flex justify-center items-center">
           <span className="absolute h-60 w-screen bg-[#ED7D31] z-0"></span>
-          <div className="bg-[#002060] text-[#ED7D31] border-x-2 border-[#ED7D31] h-80 -skew-2 z-10 px-4 content-center text-center text-5xl font-bold">
+          <div className="bg-[#002060] text-[#ED7D31] border-x-2 border-[#ED7D31] h-80 -skew-2 z-10 px-4 content-center text-center text-5xl max-md:text-4xl font-bold">
             <h1 className="skew-2">
               ArchBaabrak - <br /> Architecture Excellence
             </h1>
           </div>
         </section>
-        <section className="w-screen min-h-screen p-20">
+        <section className="w-screen min-h-screen p-20 max-lg:p-10 max-md:p-4">
           <div className="w-full h-full rounded-xl bg-[#002060] text-white flex p-8 gap-8">
-            <div className="w-2/3 h-full flex flex-col gap-12 pr-20">
+            <div className="w-2/3 max-md:w-full h-full flex flex-col gap-12 max-lg:gap-6 pr-20 max-lg:pr-10">
               <h2 className="text-4xl font-bold">
                 Introducing ArchBaabrak – Your Trusted Partner in Architectural
                 Excellence
@@ -45,7 +45,7 @@ function Page() {
                 </p>
               </div>
             </div>
-            <div className="w-1/3 h-full">
+            <div className="w-1/3 h-full max-md:hidden">
               <Image
                 src="/Arch/image1.svg"
                 alt="image1"
@@ -56,11 +56,11 @@ function Page() {
             </div>
           </div>
         </section>
-        <section className="w-screen h-screen flex overflow-hidden">
-            <div className="w-full h-full">
+        <section className="w-screen min-h-screen flex overflow-hidden">
+            <div className="w-full h-full max-sm:hidden">
                 <Image src="/Arch/image2.svg" alt="image2" width={100000} height={10000} className="w-full -translate-y-12" />
             </div>
-            <div className="w-full h-full bg-[#002060] text-white flex flex-col justify-center gap-8 p-8">
+            <div className="w-full h-full bg-[#002060] text-white flex flex-col justify-center gap-8 max-lg:gap-4 max-lg:p-4 p-8">
                 <h2 className="text-6xl font-bold">Our Mission</h2>
                 <div className="flex gap-4">
                     <div>
@@ -85,8 +85,8 @@ consultation fees and service charges.
                 <div className="flex gap-4"></div>
             </div>
         </section>
-        <section className="w-screen min-h-screen p-20 flex justify-center items-center">
-                  <div className="w-1/3 ">
+        <section className="w-screen min-h-screen p-20 max-md:p-4 max-lg:p-10 flex justify-center items-center">
+                  <div className="w-1/3 max-lg:w-1/2 max-md:hidden">
                     <Image
                       src="/Arch/image3.svg"
                       alt="HLPIMAGE4"
@@ -95,7 +95,7 @@ consultation fees and service charges.
                       className="h-full"
                     />
                   </div>
-                  <div className="w-2/3 h-full flex flex-col justify-center gap-8 bg-[#002060] p-8 -translate-x-8 text-white">
+                  <div className="w-2/3 max-md:w-full h-full flex flex-col justify-center gap-8 bg-[#002060] p-8 -translate-x-8 max-md:-translate-x-0 text-white">
                     <h2 className="text-3xl font-bold">Our Services</h2>
                     <div className="flex flex-col gap-1">
                       <div className="flex gap-2  items-center">
@@ -157,8 +157,8 @@ consultation fees and service charges.
                     
                   </div>
                 </section>
-                 <section className="w-screen relative pb-20 flex">
-                          <div className="w-1/2 h-full flex flex-col gap-4 pl-20">
+                 <section className="w-screen relative pb-20 max-lg:p-10 max-md:p-4 flex">
+                          <div className="w-1/2 max-md:w-full h-full flex flex-col gap-4 pl-20 max-lg:pl-10 max-md:pl-4">
                             <h2 className="text-6xl font-bold text-[#002060]">
                             Why Choose
                             ArchBaabrak?
@@ -185,7 +185,7 @@ consultation fees and service charges.
                                   <GoDotFill className="text-[#ED7D31] text-xl p-[1px] bg-[#ed7c3192] rounded-full" />
                                 </div>
                                 <p className="text-lg">
-                                Affordable and transparent service fees.
+                                Affordable and transparent service fee.
                                 </p>
                               </div>
                             </div>
@@ -203,7 +203,7 @@ regulations.</p>
                               </div>
                               <div>
                                 <strong className="text-[#ED7D31]">Quality Assurance:</strong>
-                                <p>Commitment to delivering highquality designs and solutions.</p>
+                                <p>Commitment to delivering high quality designs and solutions.</p>
                               </div>
                               <div>
                                 <strong className="text-[#ED7D31]">Client-Centric Approach:</strong>
@@ -211,13 +211,13 @@ regulations.</p>
                                 unique requirements.</p>
                               </div>
                               <div>
-                                <strong className="text-[#ED7D31]">Affordable Fees:</strong>
+                                <strong className="text-[#ED7D31]">Affordable Fee:</strong>
                                 <p>Transparent and reasonable
                                 consultation and service charges.</p>
                               </div>
                             </div>
                           </div>
-                          <div className="w-1/2 h-[547.3px] rounded-l-full flex flex-col justify-center pl-16  bg-[#002060]">
+                          <div className="w-1/2 h-[547.3px] rounded-l-full flex flex-col justify-center pl-16  bg-[#002060] max-md:hidden">
                             <Image
                               src="/Arch/image4.svg"
                               alt="How it works"

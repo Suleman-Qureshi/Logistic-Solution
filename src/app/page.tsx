@@ -2,6 +2,7 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import AboutSection from "./components/sections/AboutSection";
+import ArkConsult from "./components/sections/ArkConsult";
 import HeroSection from "./components/sections/HeroSection";
 import HowItsWorks from "./components/sections/HowItsWorks";
 import OurMissionSection from "./components/sections/OurMissionSection";
@@ -17,6 +18,7 @@ export default function Home() {
   <ServicesSection/>  
   <HowItsWorks/>
   <OurMissionSection/>
+  <ArkConsult/>
   <Footer/>
    </>
   )
